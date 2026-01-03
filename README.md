@@ -101,18 +101,17 @@ docker-compose ps
 - Health Check: http://localhost:5000/api/health
 
 ## 6. Environment Variables
-See backend/.env.example
+See backend/.env
 ```env
-# App
 NODE_ENV=development
 PORT=5000
-
-# Database
 DATABASE_URL=postgres://postgres:postgres@database:5432/saas_db
-
-# JWT
 JWT_SECRET=supersecretjwtkey
 JWT_EXPIRES_IN=24h
+```
+See frontend/.env
+```env
+VITE_API_URL=http://localhost:5000/api
 ```
 
 ### Purpose
